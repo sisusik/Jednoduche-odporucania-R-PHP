@@ -1,0 +1,56 @@
+VSTUP: Zadam na vstupe:
+Cislo zakaznika A/ALEBO cislo produktu A/ALEBO cislo kategorie
+
+VYSTUP: Odporucame vam:
+P1 P2 P3 P4 P5
+
+
+Skupiny algoritmov
+
+MACHINE LEARNING
+- Collaborativne filtrovanie
+
+BEZNA STATISTIKA
+- Najpredavanejsie produkty (celkovo / v danej kategorii / v danom obdobi roka ) 
+- Najlacnejsie / drahsie - chyba cennik
+
+RUCNE VYBRANE
+- Novinky
+- Specialne akcie (vybrane manazerom, najlepsia zlava) / Staticky obsah 
+
+RANDOM
+- Nahodne produkty
+
+
+Strategia:
+1. zobrazit 5 produktov 1 strategiou / po case menit skupiny algoritmov (TOP 5 pre 1 algoritmus)
+- na zaklade casu (jeden tyzden jedno, druhy ine)
+- na zaklade ID zakaznika / atributov zakaznika (kazdy parny dostane A, neparny B)
+- na zaklade sekcie stranky / kategorie v ktorej sa na stranke nachadza
+
+2. zobrazit N<5 produktov z kazdej kategorie - porovnavat na ktore polozky zakaznici klikaju (TOP 1-2 pre viac algorimov)
+
+3. Hybrid medzi 1-2
+
+
+System:
+1. s pamatou poslednych odporucani a akcii
+2. bez pamate
+
+
+Co odporucat:
+1. Cross category (cross-sell)
+2. In category (up-sell)
+
+
+KRITERIA USPECHU:
+1. Ked si zakaznik 
+A) Klikne na odporucany produkt
+B) Kupi si odporucany produk
+
+2.
+A) Ked pridanie recommendation widgetu zvysi cas na eshope / pocet zobrazeny stranok
+B) Zvyseny predaj (viac produktov priemerne v kosiku)
+
+3. Statisticke kriteria
+AUC, RMSE ...
